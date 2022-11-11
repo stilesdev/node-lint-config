@@ -1,0 +1,33 @@
+{
+    "name": "@stilesdev/stylelint-config-base",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stilesdev/node-lint-config.git"
+    },
+    "author": {
+        "name": "Matthew Stiles",
+        "url": "https://github.com/stilesdev"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/stilesdev/node-lint-config",
+    "browserslist": [
+        "extends @stilesdev/browserslist-config"
+    ],
+    "dependencies": {
+        "@stilesdev/browserslist-config": "workspace:*",
+        "stylelint": "^14.14.0",
+        "stylelint-config-standard": "^29.0.0",
+        "stylelint-no-unsupported-browser-features": "^6.0.1",
+        "stylelint-order": "^5.0.0"
+    },
+    "devDependencies": {
+        "@stilesdev/eslint-config-base": "workspace:*",
+        "eslint": "^8.26.0"
+    }
+}

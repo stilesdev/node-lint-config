@@ -1,0 +1,17 @@
+{
+    "name": "@stilesdev/node-lint-config-monorepo",
+    "version": "0.1.0",
+    "private": true,
+    "description": "",
+    "scripts": {},
+    "keywords": [],
+    "author": {
+        "name": "Matthew Stiles",
+        "url": "https://github.com/stilesdev"
+    },
+    "license": "MIT",
+    "packageManager": "pnpm@7.15.0",
+    "devDependencies": {
+        "@stilesdev/eslint-config-base": "workspace:*"
+    }
+}

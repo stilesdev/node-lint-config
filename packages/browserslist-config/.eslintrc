@@ -1,0 +1,6 @@
+{
+    "extends": "@stilesdev/eslint-config-base",
+    "env": {
+        "jest": true
+    }
+}

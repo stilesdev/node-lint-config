@@ -1,0 +1,33 @@
+{
+    "name": "@stilesdev/stylelint-config-vue",
+    "version": "0.1.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stilesdev/node-lint-config.git"
+    },
+    "author": {
+        "name": "Matthew Stiles",
+        "url": "https://github.com/stilesdev"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/stilesdev/node-lint-config",
+    "browserslist": [
+        "extends @stilesdev/browserslist-config"
+    ],
+    "dependencies": {
+        "@stilesdev/browserslist-config": "workspace:*",
+        "@stilesdev/stylelint-config-base": "workspace:*",
+        "postcss-html": "^1.5.0",
+        "stylelint": "^14.14.0",
+        "stylelint-config-recommended-vue": "^1.4.0"
+    },
+    "devDependencies": {
+        "@stilesdev/eslint-config-base": "workspace:*",
+        "eslint": "^8.26.0"
+    }
+}
