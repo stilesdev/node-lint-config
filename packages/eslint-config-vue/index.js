@@ -10,11 +10,10 @@ module.exports = {
         sourceType: 'module',
     },
     plugins: [
-        '@typescript-eslint',
         'vue',
     ],
     extends: [
-        '@stilesdev/eslint-config-base',
+        '@stilesdev/eslint-config-typescript',
         'plugin:vue/vue3-recommended',
         '@vue/eslint-config-typescript',
     ],

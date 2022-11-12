@@ -1,5 +1,5 @@
 {
-    "name": "@stilesdev/eslint-config-vue",
+    "name": "@stilesdev/eslint-config-typescript",
     "version": "0.1.0",
     "description": "",
     "main": "index.js",
@@ -23,9 +23,9 @@
         "@rushstack/eslint-patch": "^1.2.0",
         "@stilesdev/browserslist-config": "workspace:*",
         "@stilesdev/eslint-config-base": "workspace:*",
-        "@vue/eslint-config-typescript": "^11.0.2",
+        "@typescript-eslint/eslint-plugin": "^5.40.1",
+        "@typescript-eslint/parser": "^5.40.1",
         "eslint": "^8.26.0",
-        "eslint-plugin-vue": "^9.6.0",
         "typescript": "^4.8.4"
     }
 }
