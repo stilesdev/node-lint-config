@@ -25,5 +25,11 @@ module.exports = {
                 indent: 'off',
             },
         },
+        {
+            files: ['src/pages/**'],
+            rules: {
+                'vue/multi-word-component-names': 0,
+            },
+        },
     ],
 }
