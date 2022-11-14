@@ -19,11 +19,13 @@
     "browserslist": [
         "extends @stilesdev/browserslist-config"
     ],
+    "peerDependencies": {
+        "stylelint": ">=14.0.0"
+    },
     "dependencies": {
         "@stilesdev/browserslist-config": "workspace:*",
         "@stilesdev/stylelint-config-base": "workspace:*",
         "postcss-html": "^1.5.0",
-        "stylelint": "^14.14.0",
         "stylelint-config-recommended-vue": "^1.4.0"
     },
     "devDependencies": {

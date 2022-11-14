@@ -15,24 +15,25 @@ importers:
       '@stilesdev/eslint-config-base': workspace:*
       browserslist: ^4.21.4
       eslint: ^8.26.0
-      eslint-plugin-compat: ^4.0.2
       jest: ^29.2.1
     devDependencies:
       '@stilesdev/eslint-config-base': link:../eslint-config-base
       browserslist: 4.21.4
       eslint: 8.26.0
-      eslint-plugin-compat: 4.0.2_eslint@8.26.0
       jest: 29.2.1
 
   packages/eslint-config-base:
     specifiers:
+      '@rushstack/eslint-patch': ^1.2.0
       '@stilesdev/browserslist-config': workspace:*
       eslint: ^8.26.0
       eslint-plugin-compat: ^4.0.2
     dependencies:
+      '@rushstack/eslint-patch': 1.2.0
       '@stilesdev/browserslist-config': link:../browserslist-config
-      eslint: 8.26.0
       eslint-plugin-compat: 4.0.2_eslint@8.26.0
+    devDependencies:
+      eslint: 8.26.0
 
   packages/eslint-config-typescript:
     specifiers:
@@ -42,15 +43,16 @@ importers:
       '@typescript-eslint/eslint-plugin': ^5.40.1
       '@typescript-eslint/parser': ^5.40.1
       eslint: ^8.26.0
-      typescript: ^4.8.4
+      typescript: '*'
     dependencies:
       '@rushstack/eslint-patch': 1.2.0
       '@stilesdev/browserslist-config': link:../browserslist-config
       '@stilesdev/eslint-config-base': link:../eslint-config-base
       '@typescript-eslint/eslint-plugin': 5.40.1_c4zyna56jjjrggqkyejnaxjxfu
       '@typescript-eslint/parser': 5.40.1_wyqvi574yv7oiwfeinomdzmc3m
-      eslint: 8.26.0
       typescript: 4.8.4
+    devDependencies:
+      eslint: 8.26.0
 
   packages/eslint-config-vue:
     specifiers:
@@ -60,22 +62,23 @@ importers:
       '@vue/eslint-config-typescript': ^11.0.2
       eslint: ^8.26.0
       eslint-plugin-vue: ^9.6.0
-      typescript: ^4.8.4
+      typescript: '*'
     dependencies:
       '@rushstack/eslint-patch': 1.2.0
       '@stilesdev/browserslist-config': link:../browserslist-config
       '@stilesdev/eslint-config-typescript': link:../eslint-config-typescript
       '@vue/eslint-config-typescript': 11.0.2_dssioqymv64e7t7ogoe3tncpcu
-      eslint: 8.26.0
       eslint-plugin-vue: 9.6.0_eslint@8.26.0
       typescript: 4.8.4
+    devDependencies:
+      eslint: 8.26.0
 
   packages/stylelint-config-base:
     specifiers:
       '@stilesdev/browserslist-config': workspace:*
       '@stilesdev/eslint-config-base': workspace:*
       eslint: ^8.26.0
-      stylelint: ^14.14.0
+      stylelint: '>=14.0.0'
       stylelint-config-standard: ^29.0.0
       stylelint-no-unsupported-browser-features: ^6.0.1
       stylelint-order: ^5.0.0
@@ -96,7 +99,7 @@ importers:
       '@stilesdev/stylelint-config-base': workspace:*
       eslint: ^8.26.0
       postcss-html: ^1.5.0
-      stylelint: ^14.14.0
+      stylelint: '>=14.0.0'
       stylelint-config-recommended-vue: ^1.4.0
     dependencies:
       '@stilesdev/browserslist-config': link:../browserslist-config
@@ -769,9 +772,11 @@ packages:
 
   /@mdn/browser-compat-data/3.3.14:
     resolution: {integrity: sha512-n2RC9d6XatVbWFdHLimzzUJxJ1KY8LdjqrW6YvGPiRmsHkhOUx74/Ct10x5Yo7bC/Jvqx7cDEW8IMPv/+vwEzA==}
+    dev: false
 
   /@mdn/browser-compat-data/4.2.1:
     resolution: {integrity: sha512-EWUguj2kd7ldmrF9F+vI5hUOralPd+sdsUnYbRy33vZTuZkduC1shE9TtEMEjAQwyfyMb4ole5KtjF8MsnQOlA==}
+    dev: false
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -1155,6 +1160,7 @@ packages:
     resolution: {integrity: sha512-OkMLzd8xelb3gmnp6ToFvvsHLtS6CbagTkFQvQ+ZYFe3/AIl9iKikNR9G7pY3GfOR/2Xc222hwBjzI7HLkE76Q==}
     dependencies:
       '@mdn/browser-compat-data': 3.3.14
+    dev: false
 
   /astral-regex/2.0.0:
     resolution: {integrity: sha512-Z7tMw1ytTXt5jqMcOP+OQteU1VuNK9Y02uuJtKQ1Sv69jXQKKg5cibLwGJow8yzZP+eAc18EmLGPal0bp36rvQ==}
@@ -1408,6 +1414,7 @@ packages:
   /core-js/3.25.5:
     resolution: {integrity: sha512-nbm6eZSjm+ZuBQxCUPQKQCoUEfFOXjUZ8dTTyikyKaWrTYmAVbykQfwsKE5dBK88u3QCkCrzsx/PPlKfhsvgpw==}
     requiresBuild: true
+    dev: false
 
   /core-util-is/1.0.3:
     resolution: {integrity: sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ==}
@@ -1622,6 +1629,7 @@ packages:
       find-up: 5.0.0
       lodash.memoize: 4.1.2
       semver: 7.3.5
+    dev: false
 
   /eslint-plugin-vue/9.6.0_eslint@8.26.0:
     resolution: {integrity: sha512-zzySkJgVbFCylnG2+9MDF7N+2Rjze2y0bF8GyUNpFOnT8mCMfqqtLDJkHBuYu9N/psW1A6DVbQhPkP92E+qakA==}
@@ -2720,6 +2728,7 @@ packages:
 
   /lodash.memoize/4.1.2:
     resolution: {integrity: sha512-t7j+NzmgnQzTAYXcsHYLgimltOV1MXHtlOWf6GjL9Kj8GK5FInw5JotxvbOs+IvV1/Dzo04/fCGfLVs7aXb4Ag==}
+    dev: false
 
   /lodash.merge/4.6.2:
     resolution: {integrity: sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==}
@@ -3216,6 +3225,7 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
+    dev: false
 
   /semver/7.3.8:
     resolution: {integrity: sha512-NB1ctGL5rlHrPJtFDVIVzTyQylMLu9N9VICA6HSFJo8MCGVTMW6gfpicwKmmK/dAjTOrqu5l63JJOpDSrAis3A==}

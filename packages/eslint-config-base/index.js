@@ -1,3 +1,6 @@
+/* eslint-env node */
+require('@rushstack/eslint-patch/modern-module-resolution')
+
 const rules = require('./rules')
 
 module.exports = {
