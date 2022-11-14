@@ -11,6 +11,8 @@
     "license": "MIT",
     "packageManager": "pnpm@7.15.0",
     "scripts": {
+        "lint": "pnpm -r --no-bail run lint",
+        "test": "pnpm -r --no-bail run test",
         "release": "bumpp package.json packages/*/package.json"
     },
     "devDependencies": {
