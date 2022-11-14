@@ -4,6 +4,7 @@ module.exports = {
         true,
         {
             browsers: require('@stilesdev/browserslist-config'),
+            severity: 'warning',
         },
     ],
 }
