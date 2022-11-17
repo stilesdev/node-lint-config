@@ -25,6 +25,15 @@ importers:
   packages/eslint-config-base:
     specifiers:
       '@rushstack/eslint-patch': ^1.2.0
+      eslint: ^8.26.0
+    dependencies:
+      '@rushstack/eslint-patch': 1.2.0
+    devDependencies:
+      eslint: 8.27.0
+
+  packages/eslint-config-compat:
+    specifiers:
+      '@rushstack/eslint-patch': ^1.2.0
       '@stilesdev/browserslist-config': workspace:*
       eslint: ^8.26.0
       eslint-plugin-compat: ^4.0.2
@@ -38,7 +47,6 @@ importers:
   packages/eslint-config-typescript:
     specifiers:
       '@rushstack/eslint-patch': ^1.2.0
-      '@stilesdev/browserslist-config': workspace:*
       '@stilesdev/eslint-config-base': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.40.1
       '@typescript-eslint/parser': ^5.40.1
@@ -46,7 +54,6 @@ importers:
       typescript: '*'
     dependencies:
       '@rushstack/eslint-patch': 1.2.0
-      '@stilesdev/browserslist-config': link:../browserslist-config
       '@stilesdev/eslint-config-base': link:../eslint-config-base
       '@typescript-eslint/eslint-plugin': 5.42.1_2udltptbznfmezdozpdoa2aemq
       '@typescript-eslint/parser': 5.42.1_rmayb2veg2btbq6mbmnyivgasy
@@ -57,7 +64,6 @@ importers:
   packages/eslint-config-vue:
     specifiers:
       '@rushstack/eslint-patch': ^1.2.0
-      '@stilesdev/browserslist-config': workspace:*
       '@stilesdev/eslint-config-typescript': workspace:*
       '@vue/eslint-config-typescript': ^11.0.2
       eslint: ^8.26.0
@@ -65,7 +71,6 @@ importers:
       typescript: '*'
     dependencies:
       '@rushstack/eslint-patch': 1.2.0
-      '@stilesdev/browserslist-config': link:../browserslist-config
       '@stilesdev/eslint-config-typescript': link:../eslint-config-typescript
       '@vue/eslint-config-typescript': 11.0.2_ykuth4hqtpqqhzrv7pgjq6rjby
       eslint-plugin-vue: 9.7.0_eslint@8.27.0

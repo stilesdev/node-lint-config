@@ -6,10 +6,6 @@ const rules = require('./rules')
 module.exports = {
     extends: [
         'eslint:recommended',
-        'plugin:compat/recommended',
-    ],
-    plugins: [
-        'compat',
     ],
     env: {
         node: true,

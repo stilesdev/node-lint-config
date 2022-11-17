@@ -16,16 +16,11 @@
     },
     "license": "MIT",
     "homepage": "https://github.com/stilesdev/node-lint-config",
-    "browserslist": [
-        "extends @stilesdev/browserslist-config"
-    ],
     "peerDependencies": {
         "eslint": "^7.0.0 || ^8.0.0"
     },
     "dependencies": {
-        "@rushstack/eslint-patch": "^1.2.0",
-        "@stilesdev/browserslist-config": "workspace:*",
-        "eslint-plugin-compat": "^4.0.2"
+        "@rushstack/eslint-patch": "^1.2.0"
     },
     "devDependencies": {
         "eslint": "^8.26.0"
