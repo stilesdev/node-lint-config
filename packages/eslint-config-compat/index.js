@@ -1,14 +1,16 @@
 /* eslint-env node */
 require('@rushstack/eslint-patch/modern-module-resolution')
 
+const browserslist = require('@stilesdev/browserslist-config')
+
 module.exports = {
-    extends: [
-        'plugin:compat/recommended',
-    ],
     plugins: [
         'compat',
     ],
     env: {
         browser: true,
+    },
+    rules: {
+        'compat/compat': ['error', browserslist.join(',')],
     },
 }
