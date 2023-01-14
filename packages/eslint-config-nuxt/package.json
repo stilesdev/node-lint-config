@@ -1,0 +1,31 @@
+{
+    "name": "@stilesdev/eslint-config-nuxt",
+    "version": "0.3.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stilesdev/node-lint-config.git"
+    },
+    "author": {
+        "name": "Matthew Stiles",
+        "url": "https://github.com/stilesdev"
+    },
+    "license": "MIT",
+    "homepage": "https://github.com/stilesdev/node-lint-config",
+    "peerDependencies": {
+        "eslint": "^7.0.0 || ^8.0.0",
+        "typescript": "*"
+    },
+    "dependencies": {
+        "@nuxt/eslint-config": "^0.1.1",
+        "@rushstack/eslint-patch": "^1.2.0",
+        "@stilesdev/eslint-config-typescript": "workspace:*"
+    },
+    "devDependencies": {
+        "eslint": "^8.31.0"
+    }
+}
