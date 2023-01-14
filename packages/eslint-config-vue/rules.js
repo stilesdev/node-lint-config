@@ -1,4 +1,14 @@
 module.exports = {
+    '@typescript-eslint/no-unused-vars': [
+        'error',
+        {
+            vars: 'all',
+            varsIgnorePattern: '^_|^props$',
+            args: 'after-used',
+            argsIgnorePattern: '^_',
+            ignoreRestSiblings: true,
+        },
+    ],
     'vue/component-name-in-template-casing': ['error', 'PascalCase', { registeredComponentsOnly: false }],
     'vue/html-indent': ['error', 4],
     'vue/script-indent': ['error', 4, { baseIndent: 1, switchCase: 1 }],

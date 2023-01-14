@@ -4,7 +4,7 @@ module.exports = {
         'error',
         {
             vars: 'all',
-            varsIgnorePattern: '^_|^props$',
+            varsIgnorePattern: '^_',
             args: 'after-used',
             argsIgnorePattern: '^_',
             ignoreRestSiblings: true,
