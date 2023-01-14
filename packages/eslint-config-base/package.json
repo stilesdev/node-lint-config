@@ -23,6 +23,6 @@
         "@rushstack/eslint-patch": "^1.2.0"
     },
     "devDependencies": {
-        "eslint": "^8.26.0"
+        "eslint": "^8.31.0"
     }
 }
