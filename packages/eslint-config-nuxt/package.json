@@ -23,7 +23,7 @@
     "dependencies": {
         "@nuxt/eslint-config": "^0.1.1",
         "@rushstack/eslint-patch": "^1.2.0",
-        "@stilesdev/eslint-config-typescript": "workspace:*"
+        "@stilesdev/eslint-config-base": "workspace:*"
     },
     "devDependencies": {
         "eslint": "^8.31.0"

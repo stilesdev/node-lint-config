@@ -10,7 +10,7 @@ module.exports = {
         sourceType: 'module',
     },
     extends: [
-        '@stilesdev/eslint-config-typescript',
+        '@stilesdev/eslint-config-base',
         '@nuxt/eslint-config',
     ],
     rules,
