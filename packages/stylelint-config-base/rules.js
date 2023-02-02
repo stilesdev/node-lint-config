@@ -5,6 +5,7 @@ module.exports = {
         {
             browsers: require('@stilesdev/browserslist-config'),
             severity: 'warning',
+            ignore: [ 'css3-cursors' ],
         },
     ],
 }
