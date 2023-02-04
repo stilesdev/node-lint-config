@@ -30,6 +30,8 @@ module.exports = {
     '@typescript-eslint/semi': ['error', 'never'],
     'space-before-function-paren': 'off',
     '@typescript-eslint/space-before-function-paren': ['error', { anonymous: 'never', named: 'never', asyncArrow: 'always' }],
+    'space-infix-ops': 'off',
+    '@typescript-eslint/space-infix-ops': 'error',
 
     'vue/array-bracket-newline': ['error', 'consistent'],
     'vue/array-bracket-spacing': 'error',

@@ -26,10 +26,17 @@ module.exports = {
         },
     ],
     'object-curly-spacing': ['error', 'always'],
+    'padding-line-between-statements': [
+        'error',
+        { blankLine: 'always', prev: '*', next: 'return' },
+        { blankLine: 'always', prev: 'import', next: '*' },
+        { blankLine: 'any', prev: 'import', next: 'import' },
+    ],
     'prefer-template': ['error'],
     quotes: ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
     'quote-props': ['error', 'as-needed'],
     semi: ['error', 'never'],
     'space-before-function-paren': ['error', { anonymous: 'never', named: 'never', asyncArrow: 'always' }],
+    'space-infix-ops': 'error',
     'template-curly-spacing': ['error', 'never'],
 }
