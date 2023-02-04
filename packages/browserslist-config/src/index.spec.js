@@ -11,7 +11,7 @@ const firstMatch = (match, p1) => p1
 const clearedConfig = config
     .map((c) => c.replace(/^(\w+) [<=>]+ \d+$/gi, firstMatch))
     .map((c) => c.replace(/^last \d+ (\w+) major versions$/gi, firstMatch))
-    
+
 console.log(clearedConfig)
 
 describe('@stilesdev/browserslist-config', () => {
@@ -23,22 +23,22 @@ describe('@stilesdev/browserslist-config', () => {
         expect(clearedConfig.indexOf('Chrome')).toBe(0)
         expect(clearedConfig.indexOf('ChromeAndroid')).toBe(1)
     })
-    
+
     it('should contain Firefox', () => {
         expect(clearedConfig.indexOf('Firefox ESR')).toBe(2)
         expect(clearedConfig.indexOf('Firefox')).toBe(3)
         expect(clearedConfig.indexOf('FirefoxAndroid')).toBe(4)
     })
-    
+
     it('should contain Edge', () => {
         expect(clearedConfig.indexOf('Edge')).toBe(5)
     })
-    
+
     it('should contain Safari/iOS', () => {
         expect(clearedConfig.indexOf('Safari')).toBe(6)
         expect(clearedConfig.indexOf('iOS')).toBe(7)
     })
-    
+
     it('should NOT contain unnecessary browsers', () => {
         expect(clearedConfig.indexOf('Electron')).toBe(-1)
         expect(clearedConfig.indexOf('Samsung')).toBe(-1)
