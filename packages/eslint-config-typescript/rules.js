@@ -1,5 +1,17 @@
 module.exports = {
-    '@typescript-eslint/func-call-spacing': ['error'],
+    'brace-style': 'off',
+    '@typescript-eslint/brace-style': ['error', '1tbs'],
+    'comma-dangle': 'off',
+    '@typescript-eslint/comma-dangle': ['error', 'always-multiline'],
+    'comma-spacing': 'off',
+    '@typescript-eslint/comma-spacing': ['error', { before: false, after: true }],
+    'func-call-spacing': 'off',
+    '@typescript-eslint/func-call-spacing': ['error', 'never'],
+    'key-spacing': 'off',
+    '@typescript-eslint/key-spacing': ['error', { beforeColon: false, afterColon: true }],
+    'keyword-spacing': 'off',
+    '@typescript-eslint/keyword-spacing': ['error', { before: true, after: true }],
+    'no-unused-vars': 'off',
     '@typescript-eslint/no-unused-vars': [
         'error',
         {
@@ -10,4 +22,12 @@ module.exports = {
             ignoreRestSiblings: true,
         },
     ],
+    'object-curly-spacing': 'off',
+    '@typescript-eslint/object-curly-spacing': ['error', 'always'],
+    quotes: 'off',
+    '@typescript-eslint/quotes': ['error', 'single', { avoidEscape: true, allowTemplateLiterals: true }],
+    semi: 'off',
+    '@typescript-eslint/semi': ['error', 'never'],
+    'space-before-function-paren': 'off',
+    '@typescript-eslint/space-before-function-paren': ['error', { anonymous: 'never', named: 'never', asyncArrow: 'always' }],
 }
