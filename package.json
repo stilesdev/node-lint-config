@@ -9,7 +9,7 @@
         "url": "https://github.com/stilesdev"
     },
     "license": "MIT",
-    "packageManager": "pnpm@7.15.0",
+    "packageManager": "pnpm@8.6.6",
     "scripts": {
         "lint": "pnpm -r --no-bail run lint",
         "test": "pnpm -r --no-bail run test",
@@ -17,7 +17,7 @@
     },
     "devDependencies": {
         "@stilesdev/eslint-config-base": "workspace:*",
-        "bumpp": "^8.2.1"
+        "bumpp": "^9.1.1"
     },
     "pnpm": {
         "overrides": {
