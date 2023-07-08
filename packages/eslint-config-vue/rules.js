@@ -28,7 +28,7 @@ module.exports = {
     'vue/html-comment-content-spacing': ['error', 'always'],
     'vue/html-comment-indent': ['error', 4],
     'vue/html-comment-content-newline': ['error', { singleline: 'ignore', multiline: 'always' }],
-    'vue/html-indent': ['error', 4],
+    'vue/html-indent': ['error', 4, { baseIndent: 1 }],
     'vue/key-spacing': ['error', { beforeColon: false, afterColon: true }],
     'vue/keyword-spacing': ['error', { before: true, after: true }],
     'vue/max-attributes-per-line': ['error', { singleline: 5, multiline: 1 }],
@@ -55,7 +55,7 @@ module.exports = {
     'vue/prefer-template': ['error'],
     'vue/prefer-true-attribute-shorthand': 'error',
     'vue/quote-props': ['error', 'as-needed'],
-    'vue/script-indent': ['error', 4, { baseIndent: 0, switchCase: 1 }],
+    'vue/script-indent': ['error', 4, { baseIndent: 1, switchCase: 1 }],
     'vue/template-curly-spacing': ['error', 'never'],
     'vue/v-for-delimiter-style': ['error', 'in'],
 }
