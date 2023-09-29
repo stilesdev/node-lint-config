@@ -18,16 +18,5 @@
     "devDependencies": {
         "@stilesdev/eslint-config-base": "workspace:*",
         "bumpp": "^9.2.0"
-    },
-    "pnpm": {
-        "overrides": {
-            "stylelint": "^14.10.0",
-            "stylelint-config-recommended": "^9.0.0"
-        },
-        "peerDependencyRules": {
-            "allowedVersions": {
-                "stylelint": "^14.10.0"
-            }
-        }
     }
 }

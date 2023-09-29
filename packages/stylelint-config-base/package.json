@@ -20,13 +20,14 @@
         "extends @stilesdev/browserslist-config"
     ],
     "peerDependencies": {
-        "stylelint": ">=14.10.0 < 15.0.0"
+        "stylelint": ">=15.0.0"
     },
     "dependencies": {
         "@stilesdev/browserslist-config": "workspace:*",
-        "stylelint-config-standard": "^29.0.0",
-        "stylelint-no-unsupported-browser-features": "^6.1.0",
-        "stylelint-order": "^6.0.3"
+        "stylelint-config-standard": "^34.0.0",
+        "stylelint-no-unsupported-browser-features": "^7.0.0",
+        "stylelint-order": "^6.0.3",
+        "stylelint-stylistic": "^0.4.3"
     },
     "devDependencies": {
         "@stilesdev/eslint-config-base": "workspace:*",
