@@ -15,6 +15,7 @@ module.exports = {
     extends: [
         '@stilesdev/eslint-config-base',
         'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/stylistic',
     ],
     rules,
 }
