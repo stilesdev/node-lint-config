@@ -26,10 +26,10 @@
         "@stilesdev/browserslist-config": "workspace:*",
         "@stilesdev/stylelint-config-base": "workspace:*",
         "postcss-html": "^1.5.0",
-        "stylelint-config-recommended-vue": "^1.4.0"
+        "stylelint-config-recommended-vue": "^1.5.0"
     },
     "devDependencies": {
         "@stilesdev/eslint-config-base": "workspace:*",
-        "eslint": "^8.44.0"
+        "eslint": "^8.50.0"
     }
 }
