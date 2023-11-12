@@ -14,4 +14,18 @@ module.exports = {
         '@nuxt/eslint-config',
     ],
     rules,
+    overrides: [
+        {
+            files: ['*.vue'],
+            rules: {
+                indent: 'off',
+            },
+        },
+        {
+            files: ['pages/**'],
+            rules: {
+                'vue/multi-word-component-names': 'off',
+            },
+        },
+    ],
 }
