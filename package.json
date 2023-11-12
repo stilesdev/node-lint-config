@@ -9,7 +9,7 @@
         "url": "https://github.com/stilesdev"
     },
     "license": "MIT",
-    "packageManager": "pnpm@8.8.0",
+    "packageManager": "pnpm@8.10.2",
     "scripts": {
         "lint": "pnpm -r --no-bail run lint",
         "test": "pnpm -r --no-bail run test",
